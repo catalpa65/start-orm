@@ -95,4 +95,12 @@ class StartOrmApplicationTests {
         userList.forEach(System.out::println);
     }
 
+    @Test
+    public void insertAR() {
+        User user = new User();
+        user.setUserName("Tom");
+        user.setRemark("AR");
+        user.insert();
+    }
+
 }
